@@ -30,6 +30,7 @@ namespace UnrealBuildTool.Rules
 			PrivateDependencyModuleNames.AddRange(
 				new string[]
 				{
+                    "UEWebSocket",
 					// ... add private dependencies that you statically link with here ...
 				}
 				);
