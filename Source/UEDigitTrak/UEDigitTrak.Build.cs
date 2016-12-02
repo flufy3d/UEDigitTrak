@@ -22,7 +22,7 @@ namespace UnrealBuildTool.Rules
 			PublicDependencyModuleNames.AddRange(
 				new string[]
 				{
-					"Core",
+					
 					// ... add other public dependencies that you statically link with here ...
 				}
 				);
@@ -30,6 +30,9 @@ namespace UnrealBuildTool.Rules
 			PrivateDependencyModuleNames.AddRange(
 				new string[]
 				{
+                    "Core",
+                    "CoreUObject",
+                    "Engine",
                     "UEWebSocket",
 					// ... add private dependencies that you statically link with here ...
 				}
