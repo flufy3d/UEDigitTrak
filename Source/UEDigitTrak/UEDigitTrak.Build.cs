@@ -14,7 +14,8 @@ namespace UnrealBuildTool.Rules
 
 			PrivateIncludePaths.AddRange(
 				new string[] {
-					"Developer/UEDigitTrak/Private",
+					"UEDigitTrak/Private",
+                    "UEWebSocket/Private",
 					// ... add other private include paths required here ...
 				}
 				);
