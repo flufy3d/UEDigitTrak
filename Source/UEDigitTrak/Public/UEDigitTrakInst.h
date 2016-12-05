@@ -45,8 +45,6 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "UEDigitTrak")
 		int GetDeviceStatus();
 
-
-
 	UPROPERTY(BlueprintAssignable)
 		FDigitTrakInfoCallBack WaitCallBack;
 
@@ -78,5 +76,9 @@ private:
 	void OnWebsocketConnectedCallBack();
 
 	void OnWebsocketErrorCallBack();
+
+	void FinishDestroy() override;
+
+	int device_status;
 
 };
