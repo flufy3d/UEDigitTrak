@@ -28,3 +28,4 @@ void FUEDigitTrak::ShutdownModule()
 
 
 
+DEFINE_LOG_CATEGORY(LogUEDigitTrak);

@@ -29,6 +29,9 @@ public:
 		void Standby();
 
 	UFUNCTION(BlueprintCallable, Category = "UEDigitTrak")
+		void Suspend();
+
+	UFUNCTION(BlueprintCallable, Category = "UEDigitTrak")
 		void Shutdown();
 
 	UFUNCTION(BlueprintCallable, Category = "UEDigitTrak")
@@ -58,7 +61,7 @@ public:
 		FDigitTrakInfoCallBack AccomplishCallBack;
 
 	UPROPERTY(BlueprintAssignable)
-		FDigitTrakBallCallBack kBallCallBack;
+		FDigitTrakBallCallBack BallCallBack;
 
 	UPROPERTY(BlueprintAssignable)
 		FDigitTrakClubCallBack ClubCallBack;
@@ -80,5 +83,9 @@ private:
 	void FinishDestroy() override;
 
 	int device_status;
+
+	TSharedPtr<TJsonReader<TCHAR>> JsonReader;
+
+	TSharedPtr<FJsonObject> JsonParsed;
 
 };

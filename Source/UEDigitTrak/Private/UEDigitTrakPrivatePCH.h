@@ -1,4 +1,5 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
+#pragma once
 
 #include "IUEDigitTrak.h"
 
@@ -7,3 +8,5 @@
 
 #include "UEDigitTrakBlueprintFunctionLibrary.h"
 #include "UEDigitTrakInst.h"
+
+DECLARE_LOG_CATEGORY_EXTERN(LogUEDigitTrak, Warning, All);
