@@ -1,6 +1,11 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 #pragma once
 
+#include "Core.h"
+#include "CoreUObject.h"
+#include "Engine.h"
+#include "Engine/Console.h"
+
 #include "IUEDigitTrak.h"
 
 // You should place include statements to your module's private header files here.  You only need to
