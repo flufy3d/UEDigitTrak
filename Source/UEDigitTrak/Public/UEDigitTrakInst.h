@@ -76,8 +76,9 @@ private:
 	
 	void OnPacketRecievedCallBack(const FString& data);
 
+	UFUNCTION()
 	void OnWebsocketConnectedCallBack();
-
+	UFUNCTION()
 	void OnWebsocketErrorCallBack();
 
 	void FinishDestroy() override;
