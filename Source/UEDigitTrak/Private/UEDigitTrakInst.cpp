@@ -115,29 +115,29 @@ void UUEDigitTrakInst::OnWebsocketErrorCallBack()
 
 void UUEDigitTrakInst::Standby()
 {
-	websocket->Send("{cmd:0}");
+	websocket->Send("{\"cmd\":0}");
 }
 
 void UUEDigitTrakInst::Suspend()
 {
-	websocket->Send("{cmd:1}");
+	websocket->Send("{\"cmd\":1}");
 }
 
 void UUEDigitTrakInst::Shutdown()
 {
-	websocket->Send("{cmd:2}");
+	websocket->Send("{\"cmd\":2}");
 }
 
 
 void UUEDigitTrakInst::SetPuttMode()
 {
-	websocket->Send("{cmd:3}");
+	websocket->Send("{\"cmd\":3}");
 }
 
 
 void UUEDigitTrakInst::SetSwingMode()
 {
-	websocket->Send("{cmd:4}");
+	websocket->Send("{\"cmd\":4}");
 }
 
 
